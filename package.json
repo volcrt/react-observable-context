@@ -1,0 +1,31 @@
+{
+  "name": "react-observable-context",
+  "version": "1.0.2",
+  "description": "using observable context gives the decision whether to rerender or not to the children using the context",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/volcrt/react-observable-context"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "callback",
+    "async",
+    "states"
+  ],
+  "author": "volcrt",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/volcrt/react-observable-context/issues"
+  },
+  "peerDependencies": {
+    "react": ">=16.0",
+    "react-use-fun": ">=1.0.4"
+  },
+  "homepage": "https://github.com/volcrt",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/preset-react": "^7.18.6"
+  }
+}
