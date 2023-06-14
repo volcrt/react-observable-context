@@ -1,13 +1,19 @@
 import React, {useContext, useEffect, useState} from "react";
 import {useFun} from "react-use-fun";
 
+function generateUuid() {
+    return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+    );
+}
+
 /**
  * subscribes to an observable context
  * @param fun is called once the observed context data changes
  * @param ObservedContext the context object to subscribe
  * @param id
  */
-export function useObservedContext(fun, ObservedContext, id = crypto.randomUUID()) {
+export function useObservedContext(fun, ObservedContext, id = generateUuid()) {
     const subscribe = useContext(ObservedContext)
     if (subscribe === undefined) {
         throw new Error('Context must be used within a provider or context is not observable')

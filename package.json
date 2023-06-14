@@ -1,6 +1,6 @@
 {
   "name": "react-observable-context",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "using observable context gives the decision whether to rerender or not to the children using the context",
   "main": "src/index.js",
   "repository": {
